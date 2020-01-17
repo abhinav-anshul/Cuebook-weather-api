@@ -1,0 +1,48 @@
+.form_container {
+  background-color: #00adb5;
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+
+  .form_container-calendar-input {
+    background-color: #00adb5;
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .detail_container {
+    background-color: #2b2e4a;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    color: white;
+  }
+  .date-picker {
+    font-size: 2rem;
+  }
+}
+
+.a {
+  font-size: 2.6rem;
+  outline: none;
+  cursor: pointer;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: white;
+  background-color: #fc5185;
+  border: none;
+  margin: 2rem;
+  padding: 1rem;
+}
+
+input {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 300;
+  font-family: "Lato", sans-serif;
+  padding: 1rem;
+}
