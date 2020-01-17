@@ -21,6 +21,26 @@ class Form extends Component {
     };
   }
 
+  componentDidMount() {
+    let API_KEY_DARKSKY = "0df8da9663f4fa50aa8074af1a714c4c";
+    let bangalore = `https://cors-anywhere.herokuapp.com/https://api.darksky.net/forecast/${API_KEY_DARKSKY}/12.97,77.59,${Math.round(
+      new Date().getTime() / 1000
+    )}?exclude=currently,flags,minutely,hourly`;
+    fetch(bangalore)
+      .then(results2 => {
+        return results2.json();
+      })
+      .then(data2 => {
+        this.setState({
+          darkskySummary: data2.daily.data[0].summary,
+          darkskyTemperatureHigh: data2.daily.data[0].temperatureHigh,
+          darkskyTemperatureLow: data2.daily.data[0].temperatureLow,
+          darkskyHumidity: data2.daily.data[0].humidity,
+          darkskyPressure: data2.daily.data[0].pressure
+        });
+      });
+  }
+
   apicall() {
     let API_KEY_OPEN_WEATHER = "bc8b1777bd124a4bb25eb8c1196c019c";
 
@@ -100,7 +120,7 @@ class Form extends Component {
             <input
               onChange={e => this.setState({ inputCity: e.target.value })}
               type="text"
-              placeholder="Enter City Name"
+              placeholder="Bangalore"
               required
             />
 
@@ -117,12 +137,26 @@ class Form extends Component {
           </div>
         </div>
         <div className="detail_container">
-          <div>Summary : {this.state.darkskySummary}</div>
-          <div>temp High : {this.state.darkskyTemperatureHigh}</div>
-          <div>Temp Low :{this.state.darkskyTemperatureLow}</div>
-          <div>Pressure : {this.state.darkskyPressure}</div>
-
-          <div>Humidity : {this.state.darkskyHumidity}</div>
+          <div>
+            <span>Summary : </span>
+            {this.state.darkskySummary}
+          </div>
+          <div>
+            <span>Temperature High : </span>
+            {this.state.darkskyTemperatureHigh} F
+          </div>
+          <div>
+            <span>Temperature Low :</span>
+            {this.state.darkskyTemperatureLow} F
+          </div>
+          <div>
+            <span>Pressure : </span>
+            {this.state.darkskyPressure} mb
+          </div>
+          <div>
+            <span>Humidity : </span>
+            {this.state.darkskyHumidity} %
+          </div>
         </div>
       </div>
     );

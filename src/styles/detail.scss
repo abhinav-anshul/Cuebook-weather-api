@@ -2,7 +2,11 @@
   background-color: #00adb5;
   width: 50%;
   margin-top: 10%;
-  margin-left: 25%;
+  margin-left: 20%;
+  padding: 5rem;
+  -webkit-box-shadow: 17px 15px 60px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 17px 15px 60px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 17px 15px 60px -15px rgba(0, 0, 0, 0.75);
 
   .form_container-calendar-input {
     background-color: #00adb5;
@@ -33,7 +37,7 @@
   font-family: "Lato", sans-serif;
   font-weight: 400;
   color: white;
-  background-color: #fc5185;
+  background-color: #e23e57;
   border: none;
   margin: 2rem;
   padding: 1rem;
@@ -45,4 +49,12 @@ input {
   font-weight: 300;
   font-family: "Lato", sans-serif;
   padding: 1rem;
+}
+
+span {
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: "Poiret One", cursive;
+  padding-left: 2rem;
+  padding-right: 1.2rem;
 }
