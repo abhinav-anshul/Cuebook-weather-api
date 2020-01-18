@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import DatePicker from "react-date-picker";
-import FlipMove from "react-flip-move";
 
 class Form extends Component {
   constructor(props) {
