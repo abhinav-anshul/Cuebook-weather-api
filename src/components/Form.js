@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import DatePicker from "react-date-picker";
+import FlipMove from "react-flip-move";
 
 class Form extends Component {
   constructor(props) {
@@ -136,26 +137,36 @@ class Form extends Component {
             />
           </div>
         </div>
+
         <div className="detail_container">
-          <div>
-            <span>Summary : </span>
-            {this.state.darkskySummary}
+          <div className="summary">{this.state.darkskySummary}</div>
+
+          <div className="high_container">
+            <div className="high_container-name">Temperature High : </div>
+            <div className="high_container-value">
+              {this.state.darkskyTemperatureHigh} F
+            </div>
           </div>
-          <div>
-            <span>Temperature High : </span>
-            {this.state.darkskyTemperatureHigh} F
+
+          <div className="low_container">
+            <div className="low_container-name">Temperature Low :</div>
+            <div className="low_container-value">
+              {this.state.darkskyTemperatureLow} F{" "}
+            </div>
           </div>
-          <div>
-            <span>Temperature Low :</span>
-            {this.state.darkskyTemperatureLow} F
+
+          <div className="pressure_container">
+            <div className="pressure_container-name">Pressure : </div>
+            <div className="pressure_container-value">
+              {this.state.darkskyPressure} mb{" "}
+            </div>
           </div>
-          <div>
-            <span>Pressure : </span>
-            {this.state.darkskyPressure} mb
-          </div>
-          <div>
-            <span>Humidity : </span>
-            {this.state.darkskyHumidity} %
+
+          <div className="humidity_container">
+            <div className="humidity_container-name">Humidity : </div>
+            <div className="humidity_container-value">
+              {this.state.darkskyHumidity} %{" "}
+            </div>
           </div>
         </div>
       </div>
