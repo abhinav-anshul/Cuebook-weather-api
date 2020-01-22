@@ -119,7 +119,7 @@
 }
 
 .a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   outline: none;
   cursor: pointer;
   font-family: "Space Mono", monospace;
@@ -131,6 +131,7 @@
   margin-left: 2rem;
   padding: 1.2rem;
   text-transform: uppercase;
+  transform: translateY(-0.3rem);
 }
 .a:hover {
   background-color: #1e2a78;
