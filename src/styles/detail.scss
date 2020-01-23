@@ -9,6 +9,7 @@
   -moz-box-shadow: 17px 15px 60px -15px rgba(0, 0, 0, 0.75);
   box-shadow: 17px 15px 60px -15px rgba(0, 0, 0, 0.75);
   border-radius: 1.5rem;
+  margin-bottom: 5rem;
 
   .form_container-calendar-input {
     background-color: #00adb5;
@@ -91,7 +92,7 @@
         grid-template-columns: 1fr 1fr;
         .pressure-name {
           //background-color: yellow;
-          transform: translateX(-1rem);
+          transform: translateX(-1.5rem);
           display: flex;
           justify-content: flex-end;
           font-weight: 500;
