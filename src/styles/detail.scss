@@ -88,10 +88,13 @@
       .pressure-container {
         //background-color: pink;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         .pressure-name {
           //background-color: yellow;
           transform: translateX(-1rem);
+          display: flex;
+          justify-content: flex-end;
+          font-weight: 500;
         }
         .pressure-value {
           //background-color: pink;
@@ -103,9 +106,12 @@
       .humidity-container {
         //background-color: green;
         display: grid;
-        grid-template-columns: 2fr 1fr;
+        grid-template-columns: 1fr 1fr;
         .humidity-name {
           //background-color: yellow;
+          display: flex;
+          justify-content: flex-end;
+          font-weight: 500;
         }
         .humidity-value {
           //background-color: pink;
