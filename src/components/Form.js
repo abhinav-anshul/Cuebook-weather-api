@@ -140,31 +140,47 @@ class Form extends Component {
         <div className="detail_container">
           <div className="summary">{this.state.darkskySummary}</div>
 
-          <div className="high_container">
-            <div className="high_container-name">Temperature High : </div>
-            <div className="high_container-value">
-              {this.state.darkskyTemperatureHigh} F
+          <div className="temperature_container">
+            <div className="temperature_high_container">
+              <div className="name_container-high">
+                <div className="head_name-high">Temperature</div>
+                <div className="head_subname-high">high</div>
+              </div>
+              <div className="value_container-high">
+                {this.state.darkskyTemperatureHigh} F
+              </div>
+              <div className="img_icon_container-high">
+                <img src="https://img.icons8.com/ios-filled/50/000000/long-arrow-up.png" />
+              </div>
+            </div>
+
+            <div className="temperature_low_container">
+              <div className="name_container-low">
+                <div className="head_name-low">Temperature</div>
+                <div className="head_subname-low">low</div>
+              </div>
+              <div className="value_container-low">
+                {" "}
+                {this.state.darkskyTemperatureLow} F
+              </div>
+              <div className="img_icon_container-low">
+                <img src="https://img.icons8.com/ios-filled/50/000000/long-arrow-down.png" />
+              </div>
             </div>
           </div>
 
-          <div className="low_container">
-            <div className="low_container-name">Temperature Low :</div>
-            <div className="low_container-value">
-              {this.state.darkskyTemperatureLow} F{" "}
+          <div className="card_container">
+            <div className="pressure-container">
+              <div className="pressure-name">Pressure</div>
+              <div className="pressure-value">
+                {this.state.darkskyPressure} mb
+              </div>
             </div>
-          </div>
-
-          <div className="pressure_container">
-            <div className="pressure_container-name">Pressure : </div>
-            <div className="pressure_container-value">
-              {this.state.darkskyPressure} mb{" "}
-            </div>
-          </div>
-
-          <div className="humidity_container">
-            <div className="humidity_container-name">Humidity : </div>
-            <div className="humidity_container-value">
-              {this.state.darkskyHumidity} %{" "}
+            <div className="humidity-container">
+              <div className="humidity-name">Humidity</div>
+              <div className="humidity-value">
+                {this.state.darkskyHumidity} %
+              </div>
             </div>
           </div>
         </div>

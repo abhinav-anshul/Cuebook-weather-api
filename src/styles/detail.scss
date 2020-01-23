@@ -35,44 +35,6 @@
       color: white;
     }
 
-    .high_container {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      border-radius: 2rem;
-      .high_container-name {
-        padding-right: 3rem;
-        color: black;
-      }
-      .high_container-value {
-        color: #2f89fc;
-        font-weight: 900;
-        font-family: "Poiret One", cursive;
-      }
-    }
-    .low_container {
-      background-color: white;
-      display: flex;
-      justify-content: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      padding-top: 1rem;
-      padding-bottom: 1rem;
-      border-radius: 2rem;
-      .low_container-name {
-        padding-right: 3rem;
-        color: black;
-      }
-      .low_container-value {
-        color: #2f89fc;
-        font-weight: 900;
-        font-family: "Poiret One", cursive;
-      }
-    }
     .pressure_container {
       background-color: white;
       display: flex;
@@ -109,6 +71,114 @@
         color: #2f89fc;
         font-weight: 900;
         font-family: "Poiret One", cursive;
+      }
+    }
+
+    .card_container {
+      //background-color: red;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 5rem;
+      margin-bottom: 0rem;
+      padding-left: 0rem;
+      padding-right: 6rem;
+      padding-top: 1rem;
+      padding-bottom: 0rem;
+      .pressure-container {
+        //background-color: pink;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .pressure-name {
+          //background-color: yellow;
+          transform: translateX(-1rem);
+        }
+        .pressure-value {
+          //background-color: pink;
+          font-weight: 900;
+          color: black;
+          font-family: "Poiret One", cursive;
+        }
+      }
+      .humidity-container {
+        //background-color: green;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .humidity-name {
+          //background-color: yellow;
+        }
+        .humidity-value {
+          //background-color: pink;
+          font-weight: 900;
+          color: black;
+          font-family: "Poiret One", cursive;
+        }
+      }
+    }
+
+    .temperature_container {
+      //background-color: red;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6rem;
+      margin-top: 4rem;
+      padding-left: 4rem;
+      padding-right: 4rem;
+      .temperature_high_container {
+        //background-color: pink;
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        .img_icon_container-high {
+          //background-color: blue;
+          display: flex;
+        }
+        .value_container-high {
+          //background-color: lightblue;
+          color: black;
+          font-weight: 900;
+          font-family: "Poiret One", cursive;
+        }
+        .name_container-high {
+          //background-color: orange;
+
+          .head_name-high {
+            font-size: 2rem;
+          }
+          .head_subname-high {
+            text-transform: uppercase;
+            font-weight: 900;
+            display: flex;
+            color: #c94e4e;
+          }
+        }
+      }
+      .temperature_low_container {
+        //background-color: pink;
+        display: grid;
+        grid-template-columns: 1fr 3fr 2fr;
+        .img_icon_container-low {
+          //background-color: blue;
+          display: flex;
+        }
+        .value_container-low {
+          //background-color: lightblue;
+          color: #2f89fc;
+          color: black;
+          font-weight: 900;
+          font-family: "Poiret One", cursive;
+        }
+        .name_container-low {
+          //background-color: orange;
+
+          .head_name-low {
+          }
+          .head_subname-low {
+            text-transform: uppercase;
+            font-weight: 900;
+            display: flex;
+            color: #bbcfff;
+          }
+        }
       }
     }
   }
